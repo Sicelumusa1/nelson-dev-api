@@ -7,13 +7,7 @@ def create_app():
    
     app = Flask(__name__)
 
-    CORS(app, resources={
-        r"re_arrange/*": {
-            "origins": "http://127.0.0.1:5500",
-            "methods": ["GET", "POST"],
-            "allow_headers": ["Content-Type"]
-        }
-    })
+    CORS(app)
     
     app.register_blueprint(re_arranger)
     return app

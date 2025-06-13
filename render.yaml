@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nelson-dev-api
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app:create_app()
+    envVars:
+      - key:  FLASK_ENV
+        value: production
+    plan: free
