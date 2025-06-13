@@ -6,7 +6,8 @@
         <title>API Validator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <script src="{{ url_for('static', filename='index.js') }}" defer></script>
     </head>
     <body>
         <h1>API Validator</h1>
@@ -24,6 +25,5 @@
         <button onclick="validate()">Validate</button>
 
         <div id="result">Response ...</div>
-        <script src="index.js" async defer></script>
     </body>
 </html>
