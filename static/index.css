@@ -1,8 +1,7 @@
 :root {
     --primary-color: #3f4359;
     --accent-color: #ff6a48;
-    --text-color: #eaeaea;
-    --text-mutet: #b0b2b8;
+    --text-muted: #96627c;
     --transition: all 0.3s ease;
 }
 
@@ -46,9 +45,13 @@ button:hover {
 #result {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid var(--text-mutet);
+    border: 1px solid var(--text-muted);
     border-radius: 4px;
     min-height: 50px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    font-family: monospace;
 }
 .error {
     color: red;
