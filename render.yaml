@@ -5,6 +5,6 @@ services:
     buildCommand: ""
     startCommand: gunicorn app:create_app()
     envVars:
-      - key:  FLASK_ENV
+      - key: FLASK_ENV
         value: production
     plan: free
